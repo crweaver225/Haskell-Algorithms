@@ -1,0 +1,33 @@
+# Ignore compiled Haskell binaries and intermediate files
+dist-newstyle/
+*.hi
+*.o
+*.dyn_o
+*.dyn_hi
+*.a
+*.so
+*.dll
+*.dylib
+
+# Ignore Cabal and Stack artifacts
+cabal.project.local
+cabal.project.local~
+cabal.project.freeze
+.stack-work/
+*.cabal-sandbox/
+cabal.sandbox.config
+
+# Ignore Haskell REPL history
+.ghci_history
+.ghc.environment.*
+
+# Ignore executables in the project directory
+<your-binary-name>
+
+# Ignore system-specific and IDE files
+*.swp
+*.swo
+*.bak
+*~
+*.vscode/
+
