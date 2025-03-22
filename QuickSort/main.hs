@@ -1,5 +1,5 @@
 
-quicksort :: [Int] -> [Int]
+quicksort :: (Ord a) => [a] -> [a]
 quicksort [] = []
 quicksort (x:xs) = (quicksort lesser) ++ [x] ++ (quicksort greater)
   where
@@ -7,4 +7,4 @@ quicksort (x:xs) = (quicksort lesser) ++ [x] ++ (quicksort greater)
     greater = filter (>= x) xs
 
 main :: IO ()
-main = print $ quicksort [5,3,1,2,9,6,4]
+main = print $ quicksort ['a','v','c','r','s']--[5,3,1,2,9,6,4]
