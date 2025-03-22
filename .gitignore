@@ -20,6 +20,7 @@ cabal.sandbox.config
 # Ignore Haskell REPL history
 .ghci_history
 .ghc.environment.*
+main
 
 # Ignore executables in the project directory
 <your-binary-name>
